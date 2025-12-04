@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Baldede Sürücü Kursu — Ehliyet Almak İçin En İyi Tercih</title>
+<meta name="description" content="Baldede Sürücü Kursu: Profesyonel eğitmenler, modern araçlar ve yüksek başarı oranı. Teori ve pratik eğitim paketleri." />
+<style>
+:root{--bg:#0a0f2d;--card:#1a1f4d;--accent:#00d4ff;--muted:#a0c4ff;--glass:rgba(100,200,255,0.08);--success:#00ff7f;--primary:#ff6b9d;--secondary:#ffa500}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(135deg,#0a0f2d 0%,#1a1850 50%,#2d1b4e 100%);color:#e6f0ff;line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.05)}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,#ff6b9d,#ffa500);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff}
+nav{display:flex;gap:18px;align-items:center}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;transition:color 0.3s}
+nav a:hover{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:36px}
+.hero h1{font-size:38px;margin:0 0 12px;background:linear-gradient(120deg,#00d4ff,#ff6b9d,#ffa500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{color:var(--muted);margin:0 0 18px}
+.cta{display:inline-block;padding:12px 24px;border-radius:10px;background:linear-gradient(90deg,#00d4ff,#00ff7f);color:#0a0f2d;text-decoration:none;font-weight:700;transition:transform 0.3s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,212,255,0.4)}
+.card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.feature{padding:14px;border-radius:10px;background:linear-gradient(180deg,var(--glass),transparent);border:1px solid rgba(255,255,255,0.04);transition:border-color 0.3s}
+.feature:hover{border-color:var(--accent)}
+.feature strong{display:block;margin-bottom:8px;color:#00ff7f}
+.hero-image{width:100%;max-width:420px;height:280px;border-radius:12px;background:linear-gradient(135deg,rgba(0,212,255,0.15),rgba(255,107,157,0.15));display:flex;align-items:center;justify-content:center;font-size:80px}
+.section{margin-top:50px;padding:30px;border-radius:12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.04)}
+.section h2{font-size:28px;margin-top:0;color:#00d4ff;text-shadow:0 0 20px rgba(0,212,255,0.3)}
+.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:16px}
+.service-item{padding:16px;background:var(--card);border-radius:10px;border-left:3px solid #ff6b9d}
+.service-item h3{margin:0 0 8px;font-size:16px}
+.service-item p{margin:0;font-size:14px;color:var(--muted)}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.price-card{padding:20px;background:var(--card);border-radius:10px;border:1px solid rgba(255,255,255,0.04);text-align:center}
+.price-card h3{margin:0 0 12px;font-size:18px}
+.price-card .price{font-size:32px;font-weight:700;color:#00d4ff;margin:12px 0}
+.price-card ul{list-style:none;padding:0;margin:12px 0;text-align:left;font-size:14px}
+.price-card ul li{padding:6px 0;color:var(--muted)}
+.price-card ul li:before{content:"✓ ";color:var(--success);font-weight:700;margin-right:8px}
+.cta-secondary{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid #00d4ff;color:#00d4ff;text-decoration:none;font-weight:600;margin-top:12px;transition:all 0.3s}
+.cta-secondary:hover{background:rgba(0,212,255,0.15);box-shadow:0 0 15px rgba(0,212,255,0.3)}
+.contact-form{max-width:600px}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px;font-weight:600}
+.form-group input,.form-group textarea{width:100%;padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:inherit;font-family:inherit;transition:border-color 0.3s}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:#00d4ff;background:rgba(0,212,255,0.06);box-shadow:0 0 10px rgba(0,212,255,0.2)}
+.muted{color:var(--muted)}
+.topbar{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,0.02);padding:8px 12px;border-radius:10px}
+.mobile-nav{display:none}
+.hamburger{display:none}
+footer{margin-top:50px;padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,0.05);text-align:center}
+footer p{margin:8px 0}
+/* Responsive */
+@media (max-width:980px){.hero{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}}
+@media (max-width:620px){.features{grid-template-columns:1fr}.hero h1{font-size:28px}nav{display:none}.hamburger{display:block;cursor:pointer;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02)}.mobile-nav{display:none}.mobile-nav.active{display:block;margin-top:12px}.mobile-nav a{display:block;padding:10px 0;color:var(--muted);text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.04)}}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="brand">
+<div class="logo">BSK</div>
+<div>
+<div style="font-weight:700">Baldede Sürücü Kursu</div>
+<div class="muted" style="font-size:13px">Profesyonel eğitim ve yüksek başarı</div>
+</div>
+</div>
+<nav>
+<a href="#about">Hakkımızda</a>
+<a href="#services">Hizmetler</a>
+<a href="#pricing">Fiyatlar</a>
+<a href="#contact">İletişim</a>
+</nav>
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<div id="mobileMenu" class="mobile-nav">
+<a href="#about">Hakkımızda</a>
+<a href="#services">Hizmetler</a>
+<a href="#pricing">Fiyatlar</a>
+<a href="#contact">İletişim</a>
+</div>
+
+<section class="hero">
+<div>
+<h1>Ehliyet Almak Artık Çok Kolay</h1>
+<p>Baldede Sürücü Kursu ile profesyonel eğitmenler ve kişiye özel eğitim programları ile ehliyet hayalınızı gerçekleştirin.</p>
+<a class="cta" href="#contact">Hemen Kaydol</a>
+<div class="features">
+<div class="feature">
+<strong>✓ Deneyimli Eğitmenler</strong>
+<div class="muted">22+ yıl tecrübeli profesyoneller</div>
+</div>
+<div class="feature">
+<strong>✓ Otomatik / Manuel Araçlar</strong>
+<div class="muted">Kaliteli eğitim araçları</div>
+</div>
+<div class="feature">
+<strong>✓ %95 Başarı Oranı</strong>
+<div class="muted">Sınav garantisi programı</div>
+</div>
+</div>
+</div>
+<div class="hero-image">🚗</div>
+</section>
+
+<section class="section" id="about">
+<h2>Neden Baldede'yi Seçmeliyiz?</h2>
+<div class="services-grid">
+<div class="service-item">
+<h3>Kişiye Özel Eğitim</h3>
+<p>Her öğrenci için özel bir plan hazırlanır. Kendi hızınızda ilerleyin.</p>
+</div>
+<div class="service-item">
+<h3>Esnek Saatler</h3>
+<p>Programınıza göre ayarlanan dersler.</p>
+</div>
+<div class="service-item">
+<h3>Teori + Pratik Paket</h3>
+<p>Sınav öncesi kapsamlı teori eğitimi ve bol pratik sürüşü.</p>
+</div>
+<div class="service-item">
+</div>
+</div>
+</section>
+
+<section class="section" id="services">
+<h2>Hizmetlerimiz</h2>
+<div class="video-container" style="margin:28px 0;text-align:center">
+<h3 style="color:#00d4ff;margin-bottom:16px">Sürücü Kursu Hakkında Bilgi Videosu</h3>
+<iframe width="100%" height="450" style="max-width:800px;border-radius:12px;border:2px solid rgba(0,212,255,0.3)" src="https://www.youtube.com/embed/jsu-jBURTIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="services-grid">
+<div class="service-item">
+<h3>🚗 Araç Sürücü Kursu (B Sınıfı)</h3>
+<p>Otomobil sürüşü için kapsamlı teorik ve pratik eğitim. 30 saat dersin ardından sınava hazırlanırsınız.</p>
+</div>
+<div class="service-item">
+<h3>🏍️ Motosiklet Kursu (A Sınıfı)</h3>
+<p>Motosiklet sürücülüğü için güvenlik odaklı eğitim. Uygulamalı derslerle başlayın.</p>
+</div>
+<div class="service-item">
+<h3>📚 Teori Eğitimi</h3>
+<p>Trafikle ilgili kuralları, işaretleri ve güvenlik bilgilerini kapsamlı olarak öğrenin.</p>
+</div>
+<div class="service-item">
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>İletişim ve Kaydolma</h2>
+<div class="contact-form">
+<form onsubmit="handleSubmit(event)">
+<div class="form-group">
+<label for="name">Ad Soyad</label>
+<input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+</div>
+<div class="form-group">
+<label for="email">E-posta</label>
+<input type="email" id="email" name="email" required placeholder="email@example.com">
+</div>
+<div class="form-group">
+<label for="phone">Telefon</label>
+<input type="tel" id="phone" name="phone" required placeholder="05XX XXX XXXX">
+</div>
+<div class="form-group">
+</select>
+</div>
+<div class="form-group">
+<label for="message">Mesajınız</label>
+<textarea id="message" name="message" rows="4" placeholder="Bize yazın..."></textarea>
+</div>
+<button type="submit" class="cta">Göndər</button>
+</form>
+<p style="margin-top:28px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.04)">
+<strong>Doğrudan İletişim:</strong><br>
+📞 Telefon: +90 (XXX) XXX XXXX<br>
+📧 E-posta: info@baldede-kursu.com<br>
+📍 Adres: Baldede Mahallesi, Ankara
+</p>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2024 Baldede Sürücü Kursu. Tüm hakları saklıdır.</p>
+<p>Profesyonel Eğitim • Güvenli Sürüş • Başarılı Ehliyet</p>
+</footer>
+</div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('active');
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  alert('Merhaba ' + name + '! Mesajınız alındı. En kısa sürede sizinle iletişime geçeceğiz.');
+  event.target.reset();
+}
+</script>
+</body>
+</html>
